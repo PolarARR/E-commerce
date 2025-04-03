@@ -1,0 +1,7 @@
+@mixin firstMedia {
+    @media screen and (max-width:51.25rem) { @content; }
+}
+
+@mixin secondMedia {
+    @media screen and (max-width:30rem)  {@content;}
+}

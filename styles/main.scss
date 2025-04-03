@@ -1,4 +1,5 @@
 @import "./base";
+@import "./media";
 
 body {
     width: 100%;
@@ -16,11 +17,18 @@ header {
     background-color: $background;
     box-sizing: border-box;
     @include flex(space-between, center);
+    @include firstMedia {
+        padding: 15px;
+        box-sizing: border-box;
+    }
 
     i {
         width: 50px;
         cursor: pointer;
         display: inline-block;
+        @include firstMedia {
+            width: 30px;
+        }
 
         img {
             width: 100%;
@@ -29,6 +37,9 @@ header {
 
     img {
         width: 55px;
+        @include firstMedia {
+            width: 45px;
+        }
     }
 }
 
@@ -43,12 +54,19 @@ header {
     width: 100%;
     margin: 0 ;
     color: $lightTxt;
+    @include secondMedia {
+        padding: 30px 0;
+    }
 
     h2 {
         width: 100%;
         font-size: 30px;
         font-weight: 600;
         margin: 10px;
+        @include secondMedia {
+            font-size: 18px;
+            margin: 10px 0;
+        }
     }
 
     p {
@@ -56,6 +74,9 @@ header {
         margin: 0 auto;
         font-size: 25px;
         opacity: 0.7;
+        @include secondMedia {
+            font-size: 16px;   
+        }
     }
 }
 
@@ -64,8 +85,14 @@ header {
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    @include grid(250px, 1fr);
+    @include firstMedia {
+        @include grid(200px, 1fr);
+    }
+    @include secondMedia {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
 
     article {
         cursor: pointer;
@@ -75,6 +102,14 @@ header {
     img {
         width: 200px;
         margin-bottom: 15px;
+        @include firstMedia {
+            width: 150px;
+        }
+        @include secondMedia {
+            width: 100%;
+            max-width: 200px;
+            margin-bottom: 10px;   
+        }
     }
 
     h2 {
@@ -85,7 +120,16 @@ header {
 
     p {
         font-weight: 300;
-        font-size: 15px;       
+        font-size: 15px;   
+        @include secondMedia {
+            padding: 0 10px;   
+        }    
+    }
+
+    h3 {
+        @include secondMedia {
+            padding: 0 10px;
+        }
     }
 }
 
@@ -96,9 +140,23 @@ header {
     box-sizing: border-box;
     height: 100%;
     position: fixed;
-    right: -100%;
+    right: 0;
     top: 100px;
     box-shadow: $shadow;
+    @include firstMedia {
+        width: 400px;       
+        top: 80px;
+    }
+    @include secondMedia {
+        width: 100%;
+        box-shadow: none;       
+    }
+
+    p {
+        @include secondMedia {
+            margin: 0;
+        }
+    }
 
     h2 {
         width: 100%;
@@ -107,6 +165,9 @@ header {
         font-weight: 600;
         padding: 25px 0;
         box-sizing: border-box;
+        @include secondMedia {
+            padding: 15px 0;       
+        }
     }
 
     div {
@@ -114,14 +175,24 @@ header {
         @include flex(space-between, center);
         padding: 15px;
         box-sizing: border-box;
+        @include secondMedia {
+            flex-direction: column;
+            align-items: center;
+        }
 
         p:nth-child(3){
             font-weight: 500;
+            @include secondMedia {
+                align-self: center;       
+            }
         }
 
         i {
             width: 25px;
             cursor: pointer;
+            @include secondMedia {
+                align-self: center;       
+            }
 
             img {
                 width: 100%;
@@ -131,5 +202,8 @@ header {
 
     img {
         width: 60px;
+        @include secondMedia {
+            width: 100px;       
+        }
     }
 }

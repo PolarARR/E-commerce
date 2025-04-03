@@ -17,16 +17,32 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 51.25rem) {
+  header {
+    padding: 15px;
+    box-sizing: border-box;
+  }
+}
 header i {
   width: 50px;
   cursor: pointer;
   display: inline-block;
+}
+@media screen and (max-width: 51.25rem) {
+  header i {
+    width: 30px;
+  }
 }
 header i img {
   width: 100%;
 }
 header img {
   width: 55px;
+}
+@media screen and (max-width: 51.25rem) {
+  header img {
+    width: 45px;
+  }
 }
 
 .banner {
@@ -41,17 +57,33 @@ header img {
   margin: 0;
   color: #fff;
 }
+@media screen and (max-width: 30rem) {
+  .banner {
+    padding: 30px 0;
+  }
+}
 .banner h2 {
   width: 100%;
   font-size: 30px;
   font-weight: 600;
   margin: 10px;
 }
+@media screen and (max-width: 30rem) {
+  .banner h2 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+}
 .banner p {
   width: 100%;
   margin: 0 auto;
   font-size: 25px;
   opacity: 0.7;
+}
+@media screen and (max-width: 30rem) {
+  .banner p {
+    font-size: 16px;
+  }
 }
 
 .products {
@@ -62,6 +94,18 @@ header img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
+@media screen and (max-width: 51.25rem) {
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+@media screen and (max-width: 30rem) {
+  .products {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+}
 .products article {
   cursor: pointer;
   text-align: center;
@@ -69,6 +113,18 @@ header img {
 .products img {
   width: 200px;
   margin-bottom: 15px;
+}
+@media screen and (max-width: 51.25rem) {
+  .products img {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 30rem) {
+  .products img {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 10px;
+  }
 }
 .products h2 {
   font-weight: 500;
@@ -79,6 +135,16 @@ header img {
   font-weight: 300;
   font-size: 15px;
 }
+@media screen and (max-width: 30rem) {
+  .products p {
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 30rem) {
+  .products h3 {
+    padding: 0 10px;
+  }
+}
 
 .cart {
   width: 500px;
@@ -87,9 +153,26 @@ header img {
   box-sizing: border-box;
   height: 100%;
   position: fixed;
-  right: -100%;
+  right: 0;
   top: 100px;
   box-shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 51.25rem) {
+  .cart {
+    width: 400px;
+    top: 80px;
+  }
+}
+@media screen and (max-width: 30rem) {
+  .cart {
+    width: 100%;
+    box-shadow: none;
+  }
+}
+@media screen and (max-width: 30rem) {
+  .cart p {
+    margin: 0;
+  }
 }
 .cart h2 {
   width: 100%;
@@ -99,6 +182,11 @@ header img {
   padding: 25px 0;
   box-sizing: border-box;
 }
+@media screen and (max-width: 30rem) {
+  .cart h2 {
+    padding: 15px 0;
+  }
+}
 .cart div {
   border-bottom: 1px solid #333;
   display: flex;
@@ -107,16 +195,37 @@ header img {
   padding: 15px;
   box-sizing: border-box;
 }
+@media screen and (max-width: 30rem) {
+  .cart div {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .cart div p:nth-child(3) {
   font-weight: 500;
+}
+@media screen and (max-width: 30rem) {
+  .cart div p:nth-child(3) {
+    align-self: center;
+  }
 }
 .cart div i {
   width: 25px;
   cursor: pointer;
+}
+@media screen and (max-width: 30rem) {
+  .cart div i {
+    align-self: center;
+  }
 }
 .cart div i img {
   width: 100%;
 }
 .cart img {
   width: 60px;
+}
+@media screen and (max-width: 30rem) {
+  .cart img {
+    width: 100px;
+  }
 }/*# sourceMappingURL=main.css.map */

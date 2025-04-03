@@ -8,3 +8,8 @@ $shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.30);
     justify-content: $justify;
     align-items: $align;
 }
+
+@mixin grid($min, $max){
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($min, $max));
+}
