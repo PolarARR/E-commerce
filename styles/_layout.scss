@@ -1,0 +1,165 @@
+body {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 300;
+    color: $txt;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: $main;
+}
+
+header {
+    width: 100%;
+    padding: 20px 50px;
+    background-color: $background;
+    box-sizing: border-box;
+    @include flex(space-between, center);
+    @include firstMedia {
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    i {
+        width: 45px;
+        cursor: pointer;
+        display: inline-block;
+        transition: transform 0.5s ease;
+        @include firstMedia {
+            width: 30px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        &:hover {
+            transform: scale(1.03);
+            cursor: pointer;
+            transition-delay: 0.05s;
+        }
+
+        &:active {
+            transform: scale(0.97);
+        }
+    }
+
+    img {
+        width: 55px;
+        @include firstMedia {
+            width: 45px;
+        }
+    }
+}
+
+.banner {
+    width: 100%;
+    padding: 60px 0;
+    text-align: center;
+    background-image: url(../img/banner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 ;
+    color: $lightTxt;
+    @include secondMedia {
+        padding: 30px 0;
+    }
+
+    h2 {
+        width: 100%;
+        font-size: 30px;
+        font-weight: 600;
+        margin: 10px 0;
+        @include secondMedia {
+            font-size: 18px;
+        }
+    }
+
+    p {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 25px;
+        opacity: 0.7;
+        @include secondMedia {
+            font-size: 16px;   
+        }
+    }
+}
+
+
+.cart {
+    width: 500px;
+    background-color: $lightTxt;
+    padding: 25px;
+    box-sizing: border-box;
+    height: 100%;
+    position: fixed;
+    right: -100%;
+    top: 100px;
+    box-shadow: $shadow;
+    @include firstMedia {
+        width: 400px;       
+        top: 80px;
+    }
+    @include secondMedia {
+        width: 100%;
+        box-shadow: none;       
+    }
+
+    p {
+        @include secondMedia {
+            margin: 0;
+        }
+    }
+
+    h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 25px 0;
+        box-sizing: border-box;
+        @include secondMedia {
+            padding: 15px 0;       
+        }
+    }
+
+    div {
+        border-bottom: 1px solid $background;
+        @include flex(space-between, center);
+        padding: 15px;
+        box-sizing: border-box;
+        @include secondMedia {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        p:nth-child(3){
+            font-weight: 500;
+            @include secondMedia {
+                align-self: center;       
+            }
+        }
+
+        i {
+            width: 25px;
+            cursor: pointer;
+            @include secondMedia {
+                align-self: center;       
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    img {
+        width: 60px;
+        @include secondMedia {
+            width: 100px;       
+        }
+    }
+}

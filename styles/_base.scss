@@ -1,7 +1,29 @@
 $background: #333;
+$main: #F1F1F1;
 $txt: #1d1d1d;
 $lightTxt: #fff;
 $shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.30);
+
+%hover {
+    @media (hover: hover) {
+        & {
+        transition: transform 0.5s ease;
+        }
+        
+        &:hover {
+            transform: scale(1.03);
+            cursor: pointer;
+            transition-delay: 0.05s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+%active {
+    &:active {
+        transform: scale(0.97);
+    }
+}
 
 @mixin flex($justify, $align) {
     display: flex;

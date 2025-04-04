@@ -1,0 +1,55 @@
+.main__products {
+    width: 90%;
+    margin: 55px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: $lightTxt;
+    @include grid(450px, 1fr);
+    @include firstMedia {
+        @include grid(300px, 1fr);
+    }
+    @include secondMedia {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    article {
+        text-align: center;
+        margin-top: 65px;
+    }
+
+    img {
+        width: 400px;
+        margin-bottom: 15px;
+        @extend %hover;
+        @extend %active;
+        @include firstMedia {
+            width: 150px;
+        }
+        @include secondMedia {
+            width: 100%;
+            max-width: 200px;
+            margin-bottom: 10px;   
+        }
+    }
+
+    h2 {
+        font-weight: 500;
+        font-size: 17px;
+        margin: 5px;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 15px;   
+        @include secondMedia {
+            padding: 0 10px;   
+        }    
+    }
+
+    h3 {
+        @include secondMedia {
+            padding: 0 10px;
+        }
+    }
+}
