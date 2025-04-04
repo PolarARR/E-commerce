@@ -1,3 +1,11 @@
+@mixin gridMedia {
+    @media screen and (max-width:96.563rem) { @content; }
+}
+
+@mixin gridMedia2 {
+    @media screen and (max-width: 65.375rem) { @content; }
+}
+
 @mixin firstMedia {
     @media screen and (max-width:51.25rem) { @content; }
 }
@@ -5,3 +13,4 @@
 @mixin secondMedia {
     @media screen and (max-width:30rem)  {@content;}
 }
+
