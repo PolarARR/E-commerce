@@ -4,6 +4,16 @@ $txt: #1d1d1d;
 $lightTxt: #fff;
 $shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.30);
 
+%iconHover {
+    @media (hover: hover) {
+        &:hover {
+        transform: scale(1.03);
+        cursor: pointer;
+        transition-delay: 0.05s;
+        }
+    }
+}
+
 %hover {
     @media (hover: hover) {
         & {

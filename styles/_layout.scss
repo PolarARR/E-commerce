@@ -24,23 +24,14 @@ header {
         width: 45px;
         cursor: pointer;
         display: inline-block;
-        transition: transform 0.5s ease;
+        @extend %iconHover;
+        @extend %active;
         @include firstMedia {
             width: 30px;
         }
 
         img {
             width: 100%;
-        }
-
-        &:hover {
-            transform: scale(1.03);
-            cursor: pointer;
-            transition-delay: 0.05s;
-        }
-
-        &:active {
-            transform: scale(0.97);
         }
     }
 

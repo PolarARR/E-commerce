@@ -1,8 +1,16 @@
 @media (hover: hover) {
-  .main__products img {
+  header i:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    transition-delay: 0.05s;
+  }
+}
+
+@media (hover: hover) {
+  .main__products img, .products article {
     transition: transform 0.5s ease;
   }
-  .main__products img:hover {
+  .main__products img:hover, .products article:hover {
     transform: scale(1.03);
     cursor: pointer;
     transition-delay: 0.05s;
@@ -10,7 +18,7 @@
   }
 }
 
-.main__products img:active {
+.main__products img:active, .products article:active, header i:active {
   transform: scale(0.97);
 }
 
@@ -44,7 +52,6 @@ header i {
   width: 45px;
   cursor: pointer;
   display: inline-block;
-  transition: transform 0.5s ease;
 }
 @media screen and (max-width: 51.25rem) {
   header i {
@@ -53,14 +60,6 @@ header i {
 }
 header i img {
   width: 100%;
-}
-header i:hover {
-  transform: scale(1.03);
-  cursor: pointer;
-  transition-delay: 0.05s;
-}
-header i:active {
-  transform: scale(0.97);
 }
 header img {
   width: 55px;
@@ -197,9 +196,10 @@ header img {
 
 .products {
   width: 80%;
-  margin: 0 auto;
+  margin: 55px auto;
   padding: 20px;
   box-sizing: border-box;
+  background-color: #fff;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
@@ -216,7 +216,7 @@ header img {
   }
 }
 .products article {
-  cursor: pointer;
+  margin-top: 65px;
   text-align: center;
 }
 .products img {
@@ -235,10 +235,18 @@ header img {
     margin-bottom: 10px;
   }
 }
-.products h2 {
+.products h3 {
   font-weight: 500;
   font-size: 17px;
   margin: 5px;
+  width: 80%;
+  text-align: center;
+  align-self: center;
+}
+@media screen and (max-width: 30rem) {
+  .products h3 {
+    padding: 0 10px;
+  }
 }
 .products p {
   font-weight: 300;
@@ -246,11 +254,6 @@ header img {
 }
 @media screen and (max-width: 30rem) {
   .products p {
-    padding: 0 10px;
-  }
-}
-@media screen and (max-width: 30rem) {
-  .products h3 {
     padding: 0 10px;
   }
 }
@@ -301,19 +304,10 @@ header img {
     margin-bottom: 10px;
   }
 }
-.main__products h2 {
+.main__products h3 {
   font-weight: 500;
   font-size: 17px;
   margin: 5px;
-}
-.main__products p {
-  font-weight: 300;
-  font-size: 15px;
-}
-@media screen and (max-width: 30rem) {
-  .main__products p {
-    padding: 0 10px;
-  }
 }
 @media screen and (max-width: 30rem) {
   .main__products h3 {
