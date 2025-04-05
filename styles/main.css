@@ -1,5 +1,5 @@
 @media (hover: hover) {
-  header i:hover {
+  .cart div i:hover, .cart button:hover, header i:hover {
     transform: scale(1.03);
     cursor: pointer;
     transition-delay: 0.05s;
@@ -18,7 +18,7 @@
   }
 }
 
-.main__products img:active, .products article:active, header i:active {
+.main__products img:active, .products article:active, .cart div i:active, .cart button:active, header i:active {
   transform: scale(0.97);
 }
 
@@ -120,6 +120,7 @@ header img {
   right: -100%;
   top: 100px;
   box-shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
 }
 @media screen and (max-width: 51.25rem) {
   .cart {
@@ -133,10 +134,24 @@ header img {
     box-shadow: none;
   }
 }
+.cart.show {
+  right: 0;
+}
 @media screen and (max-width: 30rem) {
   .cart p {
     margin: 0;
   }
+}
+.cart button {
+  margin: 0 auto;
+  width: 100%;
+  height: 45px;
+  background-color: rgb(37, 135, 181);
+  color: #fff;
+  font-weight: 400;
+  font-size: 15px;
+  border: none;
+  transition: all 0.3s ease;
 }
 .cart h2 {
   width: 100%;
@@ -165,6 +180,10 @@ header img {
     align-items: center;
   }
 }
+.cart div.cart__btn {
+  border-bottom: none;
+  margin-top: 30px;
+}
 .cart div p:nth-child(3) {
   font-weight: 500;
 }
@@ -175,7 +194,6 @@ header img {
 }
 .cart div i {
   width: 25px;
-  cursor: pointer;
 }
 @media screen and (max-width: 30rem) {
   .cart div i {
