@@ -3,6 +3,7 @@ $main: #F1F1F1;
 $txt: #1d1d1d;
 $lightTxt: #fff;
 $shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.30);
+$g4color: rgb(37 135 181);
 
 %iconHover {
     @media (hover: hover) {
@@ -44,4 +45,21 @@ $shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.30);
 @mixin grid($min, $max){
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax($min, $max));
+}
+
+@mixin btnActive ($bgcolor, $color){
+    &:active {
+        background-color: $bgcolor;
+        color: $color;
+    }
+}
+
+@mixin btnHover ($bgcolor, $color){
+    @media (hover: hover) {
+        &:hover {
+            background-color: $bgcolor;
+            color: $color;
+            cursor: pointer;
+        }
+    }
 }
