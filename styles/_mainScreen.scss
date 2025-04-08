@@ -1,0 +1,53 @@
+.main__products {
+    width: 90%;
+    margin: 55px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: $lightTxt;
+    @include grid(450px, 1fr);
+    @include gridMedia2 {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    article {
+        text-align: center;
+        margin-top: 65px;
+
+        &:nth-child(3) {
+            @include gridMedia{
+                grid-column: 1 / 3;
+            }
+
+            @include gridMedia2 {
+                grid-column: auto;
+            }
+        }
+    }
+
+    img {
+        width: 400px;
+        margin-bottom: 15px;
+        @extend %hover;
+        @extend %active;
+        @include gridMedia2 {
+            width: 90%;
+            max-width: 340px;
+        }
+        @include secondMedia {
+            width: 100%;
+            max-width: 200px;
+            margin-bottom: 10px;   
+            transition: none;
+        }
+    }
+
+    h3 {
+        font-weight: 500;
+        font-size: 17px;
+        margin: 5px;
+        @include secondMedia {
+            padding: 0 10px;
+        }
+    }
+}

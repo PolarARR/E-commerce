@@ -7,84 +7,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
+    <script src="js/functions.js" defer></script>
     <title>Tienda G4</title>
 </head>
 <body>
     <header>
         <i><img src="img/menu-icon.svg" alt="Menu Icon"></i>
         <img src="img/logo.webp" alt="Logo G4" class="logo">
-        <i><img src="img/shopping-cart-icon.svg" alt="Cart Icon"></i>
+        <i class="header__cart"><img src="img/shopping-cart-icon.svg" alt="Cart Icon"></i>
+        <span class="header__counter">0</span>
     </header>
 
     <main>
         <section class="banner">
-            <h2>Productos Nuevos</h2>
-            <p>Conoce nuestros productos nuevos</p>
+            <h2>Regalos Ejecutivos</h2>
         </section>
 
-        <section class="products">
+        <section class="main__products">
             <article>
-                <img src="img/takamaya-atomik.webp" alt="Takayama Atomik">
-                <h3>Mochila Takayama Atomik</h3>
-                <p>$200</p>
+                <a href="drink.html"><img src="img/Anfora-Link.webp" alt="BEBIDAS Y ALIMENTOS"></a>
+                <h3>BEBIDAS Y ALIMENTOS</h3>
             </article>
 
             <article>
-                <img src="img/takamaya-atomik-deluxe.webp" alt="Takayama Atomik Deluxe">
-                <h3>Mochila Takayama Atomik Deluxe</h3>
-                <p>$400</p>
+                <a href="backpack.html"><img src="img/Mochilas.webp" alt="Takayama Atomik-deluxe"></a>
+                <h3>MOCHILAS</h3>
             </article>
 
             <article>
-                <img src="img/bunker.webp" alt="Takayama Bunker">
-                <h3>Mochila Takayama Bunker</h3>
-                <p>$650</p>
+                <a href="pen.html"><img src="img/Dakar.webp" alt="Takayama Bunker"></a>
+                <h3>BOLÍGRAFOS</h3>
             </article>
+        </section>
 
-            <article>
-                <img src="img/Mochila-Takayama-Daily-Pack-Perspectiva.webp" alt="Mochila Takayama Daily Pack">
-                <h3>Mochila Takayama Daily Pack</h3>
-                <p>$500</p>
-            </article>
-
-            <article>
-                <img src="img/producto-464-img-2982-1.webp" alt="Mochila Takayama Diagonal">
-                <h3>Mochila Takayama Diagonal</h3>
-                <p>$300</p>
-            </article>
-
-            <article>
-                <img src="img/gizmo.webp" alt="Mochila Takayama Gizmo">
-                <h3>Mochila Takayama Gizmo</h3>
-                <p>$350</p>
-            </article>
-
-            <article>
-                <img src="img/lok.webp" alt="Mochila Takayama Lok">
-                <h3>Mochila Takayama Lok</h3>
-                <p>$550</p>
-            </article>
-
-            <article>
-                <img src="img/taktik.webp" alt="Mochila Takayama Taktik">
-                <h3>Mochila Takayama Taktik</h3>
-                <p>$600</p>
-            </article>
+        <section class="menu">
+            <h2>MENU</h2>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="backpack.html">Mochilas</a></li>
+                <li><a href="pen.html">Bolígrafos</a></li>
+                <li><a href="drink.html">Bebidas y Alimentos</a></li>
+            </ul>
+            <i><img src="img/x-icon.svg" alt="Icono quitar"></i>
         </section>
 
         <section class="cart">
             <h2>CARRITO</h2>
-            <div>
-                <img src="img/bunker.webp" alt="Takayama Bunker">
-                <p>Takayama Atomik Deluxe</p>
-                <p>$650</p>
-                <i><img src="img/trash-icon.svg" alt="Icono Quitar"></i>
-            </div>
         </section>
     </main>
-
-    <footer>
-
-    </footer>
 </body>
 </html>
