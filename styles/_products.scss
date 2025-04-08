@@ -21,6 +21,9 @@
         text-align: center;
         text-align: center;
         @extend %hover;
+        @include secondMedia {
+            transition: none;
+        }
 
         &:hover:hover {
             cursor: inherit;
@@ -42,6 +45,9 @@
             @include btnActive($background, $lightTxt);
             @include firstMedia {
                 font-size: 13px;
+            }
+            @include secondMedia {
+                transition: none;
             }
         }
     }

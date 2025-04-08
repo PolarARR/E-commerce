@@ -29,6 +29,9 @@ header {
         @include firstMedia {
             width: 30px;
         }
+        @include secondMedia {
+            transition: none;
+        }
 
         img {
             width: 100%;
@@ -39,6 +42,31 @@ header {
         width: 55px;
         @include firstMedia {
             width: 45px;
+        }
+    }
+
+    span {
+        display: none;
+
+        &.showCounter {
+            position: absolute;
+            top: 5px;
+            right: 25px;
+            background-color: $g4color;
+            color: $lightTxt;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            @include flex(center, center);
+            font-size: 14px;
+            font-weight: bold;
+
+            @include firstMedia {
+                width: 15px;
+                height: 15px;
+                font-size: 12px;
+                right: 0;
+            }
         }
     }
 }
@@ -132,6 +160,9 @@ header {
             right: 5px;
             background-color: $g4color;
         }
+        @include secondMedia {
+            transition: none;
+        }
 
         img {
             width: 100%;
@@ -178,12 +209,13 @@ header {
     background-color: $lightTxt;
     padding: 25px;
     box-sizing: border-box;
-    height: 100%;
+    height: 90%;
     position: fixed;
     right: -100%;
     top: 100px;
     box-shadow: $shadow;
     transition: all 0.3s ease;
+    overflow-y: auto; 
     @include firstMedia {
         width: 400px;       
         top: 80px;
@@ -215,6 +247,9 @@ header {
         transition: all 0.3s ease;
         @extend %iconHover;
         @extend %active;
+        @include secondMedia {
+            transition: none;
+        }
     }
 
     h2 {
@@ -244,6 +279,10 @@ header {
             margin-top: 30px;
         }
 
+        &.hidBtn {
+            display: none;
+        }
+
         p:nth-child(3){
             font-weight: 500;
             @include secondMedia {
@@ -256,11 +295,16 @@ header {
             @extend %iconHover;
             @extend %active;
             @include secondMedia {
-                align-self: center;       
+                align-self: center; 
+                transition: none;      
             }
 
             img {
                 width: 100%;
+            }
+
+            &.cart__remove--secondary {
+                display: none;
             }
         }
     }
