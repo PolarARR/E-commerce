@@ -12,85 +12,87 @@
 </head>
 <body>
     <header>
-        <i><img src="img/menu-icon.svg" alt="Menu Icon"></i>
+        <i><img src="img/menu-icon.svg" alt="Abrir menu de naveación"></i>
         <img src="img/logo.webp" alt="Logo G4" class="logo">
-        <i class="header__cart"><img src="img/shopping-cart-icon.svg" alt="Cart Icon"></i>
-        <span class="header__counter">0</span>
+        <i class="header__cart"><img src="img/shopping-cart-icon.svg" alt="Abrir carrito"></i>
+        <span class="header__counter" role="status">0</span>
     </header>
 
     <main>
-        <section class="banner">
+        <section class="banner" role="complementary">
             <h2>Mochilas</h2>
             <p>Conoce nuestras mochilas</p>
         </section>
 
         <section class="products">
             <article>
-                <img src="img/takamaya-atomik.webp" alt="Takayama Atomik">
+                <img src="img/takamaya-atomik.webp" alt="Mochila modelo: Takayama Atomik">
                 <h3>Mochila Takayama Atomik</h3>
                 <p>$200</p>
-                <button class="products__addBtn">AGREGAR AL CARRITO</button>
+                <button class="products__addBtn" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
             </article>
 
             <article>
-                <img src="img/takamaya-atomik-deluxe.webp" alt="Takayama Atomik Deluxe">
+                <img src="img/takamaya-atomik-deluxe.webp" alt="Mochila modelo: Takayama Atomik Deluxe">
                 <h3>Mochila Takayama Atomik Deluxe</h3>
                 <p>$400</p>
-                <button class="products__addBtn">AGREGAR AL CARRITO</button>
+                <button class="products__addBtn" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
             </article>
 
             <article>
-                <img src="img/bunker.webp" alt="Takayama Bunker">
+                <img src="img/bunker.webp" alt="Mochila modelo: Takayama Bunker">
                 <h3>Mochila Takayama Bunker</h3>
                 <p>$650</p>
-                <button class="products__addBtn">AGREGAR AL CARRITO</button>
+                <button class="products__addBtn" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
             </article>
 
             <article>
-                <img src="img/Mochila-Takayama-Daily-Pack-Perspectiva.webp" alt="Mochila Takayama Daily Pack">
+                <img src="img/Mochila-Takayama-Daily-Pack-Perspectiva.webp" alt="Mochila modelo: Takayama Daily Pack">
                 <h3>Mochila Takayama Daily Pack</h3>
                 <p>$500</p>
-                <button class="products__addBtn">AGREGAR AL CARRITO</button>
+                <button class="products__addBtn" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
             </article>
 
             <article>
-                <img src="img/producto-464-img-2982-1.webp" alt="Mochila Takayama Diagonal">
+                <img src="img/producto-464-img-2982-1.webp" alt="Mochila modelo: Takayama Diagonal">
                 <h3>Mochila Takayama Diagonal</h3>
                 <p>$300</p>
-                <button class="products__addBtn">AGREGAR AL CARRITO</button>
+                <button class="products__addBtn" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
             </article>
 
             <article>
-                <img src="img/gizmo.webp" alt="Mochila Takayama Gizmo">
+                <img src="img/gizmo.webp" alt="Mochila modelo: Takayama Gizmo">
                 <h3>Mochila Takayama Gizmo</h3>
                 <p>$350</p>
-                <button class="products__addBtn">AGREGAR AL CARRITO</button>
+                <button class="products__addBtn" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
             </article>
 
             <article>
-                <img src="img/lok.webp" alt="Mochila Takayama Lok">
+                <img src="img/lok.webp" alt="Mochila modelo: Takayama Lok">
                 <h3>Mochila Takayama Lok</h3>
                 <p>$550</p>
-                <button class="products__addBtn">AGREGAR AL CARRITO</button>
+                <button class="products__addBtn" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
             </article>
 
             <article>
-                <img src="img/taktik.webp" alt="Mochila Takayama Taktik">
+                <img src="img/taktik.webp" alt="Mochila modelo: Takayama Taktik">
                 <h3>Mochila Takayama Taktik</h3>
                 <p>$600</p>
-                <button class="products__addBtn">AGREGAR AL CARRITO</button>
+                <button class="products__addBtn" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
             </article>
         </section>
 
         <section class="menu">
             <h2>MENU</h2>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="backpack.html">Mochilas</a></li>
-                <li><a href="pen.html">Bolígrafos</a></li>
-                <li><a href="drink.html">Bebidas y Alimentos</a></li>
-            </ul>
-            <i><img src="img/x-icon.svg" alt="Icono quitar"></i>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Ir a la sección de inicio">Inicio</a></li>
+                    <li><a href="backpack.html" aria-label="Ir a la sección de mochilas">Mochilas</a></li>
+                    <li><a href="pen.html" aria-label="Ir a la sección de bolígrafos">Bolígrafos</a></li>
+                    <li><a href="drink.html" aria-label="Ir a la sección de bebidas y alimentos">Bebidas y Alimentos</a></li>
+                </ul>
+            </nav>
+            <i aria-label="Cerrar ventana"><img src="img/x-icon.svg" alt="Salir"></i>
         </section>
 
         <section class="cart">

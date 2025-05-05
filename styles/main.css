@@ -1,5 +1,5 @@
 @media (hover: hover) {
-  .cart div i:hover, .cart button:hover, header i:hover {
+  .modalContent div button:hover, .cart div i:hover, .cart button:hover, header i:hover {
     transform: scale(1.03);
     cursor: pointer;
     transition-delay: 0.05s;
@@ -18,7 +18,7 @@
   }
 }
 
-.main__products img:active, .cart div i:active, .cart button:active, header i:active {
+.modalContent div button:active, .main__products img:active, .cart div i:active, .cart button:active, header i:active {
   transform: scale(0.97);
 }
 
@@ -81,7 +81,7 @@ header span.showCounter {
   position: absolute;
   top: 5px;
   right: 25px;
-  background-color: rgb(37, 135, 181);
+  background-color: #175672;
   color: #fff;
   border-radius: 50%;
   width: 25px;
@@ -209,7 +209,7 @@ header span.showCounter {
   .menu i {
     top: 5px;
     right: 5px;
-    background-color: rgb(37, 135, 181);
+    background-color: #175672;
   }
 }
 @media screen and (max-width: 30rem) {
@@ -218,6 +218,11 @@ header span.showCounter {
   }
 }
 .menu i img {
+  width: 100%;
+  height: 100%;
+}
+.menu nav {
+  all: unset;
   width: 100%;
   height: 100%;
 }
@@ -251,7 +256,7 @@ header span.showCounter {
   }
 }
 .menu li a:hover:hover {
-  color: rgb(37, 135, 181);
+  color: #175672;
 }
 
 .cart {
@@ -291,7 +296,7 @@ header span.showCounter {
   margin: 0 auto;
   width: 100%;
   height: 45px;
-  background-color: rgb(37, 135, 181);
+  background-color: #175672;
   color: #fff;
   font-weight: 400;
   font-size: 15px;
@@ -412,7 +417,7 @@ header span.showCounter {
   width: 100%;
   height: 45px;
   border-radius: 0 0 5px 5px;
-  background-color: rgb(37, 135, 181);
+  background-color: #175672;
   color: #fff;
   font-weight: 400;
   font-size: 15px;
@@ -422,7 +427,7 @@ header span.showCounter {
 }
 @media (hover: hover) {
   .products article button:hover {
-    background-color: rgb(37, 135, 181);
+    background-color: #175672;
     color: #fff;
     cursor: pointer;
   }
@@ -536,4 +541,66 @@ header span.showCounter {
   .main__products h3 {
     padding: 0 10px;
   }
+}
+
+.modalContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.modalContent div {
+  box-sizing: border-box;
+  width: 400px;
+  height: auto;
+  padding: 50px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+.modalContent div h2 {
+  align-self: flex-start;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: start;
+}
+.modalContent div img {
+  width: 55px;
+}
+.modalContent div button {
+  margin: 0 auto;
+  width: 100%;
+  height: 45px;
+  background-color: #175672;
+  color: #fff;
+  font-weight: 400;
+  font-size: 15px;
+  border: none;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+.modalContent div form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+.modalContent div form label {
+  font-weight: 400;
+}
+.modalContent div form input {
+  all: unset;
+  border-bottom: #000000 1px solid;
+  padding: 0 2.5px;
+  width: 80%;
+}
+.modalContent div form input:focus {
+  border-bottom: #175672 1px solid;
 }/*# sourceMappingURL=main.css.map */

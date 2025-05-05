@@ -12,43 +12,45 @@
 </head>
 <body>
     <header>
-        <i><img src="img/menu-icon.svg" alt="Menu Icon"></i>
+        <i><img src="img/menu-icon.svg" alt="Abrir menu de naveación"></i>
         <img src="img/logo.webp" alt="Logo G4" class="logo">
-        <i class="header__cart"><img src="img/shopping-cart-icon.svg" alt="Cart Icon"></i>
-        <span class="header__counter">0</span>
+        <i class="header__cart"><img src="img/shopping-cart-icon.svg" alt="Abrir carrito"></i>
+        <span class="header__counter" role="status">0</span>
     </header>
 
     <main>
-        <section class="banner">
+        <section class="banner" role="complementary">
             <h2>Regalos Ejecutivos</h2>
         </section>
 
         <section class="main__products">
             <article>
-                <a href="drink.html"><img src="img/Anfora-Link.webp" alt="BEBIDAS Y ALIMENTOS"></a>
+                <a href="drink.html" aria-label="Ir a a la sección de bebidas y alimentos"><img src="img/Anfora-Link.webp" alt="BEBIDAS Y ALIMENTOS"></a>
                 <h3>BEBIDAS Y ALIMENTOS</h3>
             </article>
 
             <article>
-                <a href="backpack.html"><img src="img/Mochilas.webp" alt="Takayama Atomik-deluxe"></a>
+                <a href="backpack.html" aria-label="Ir a la sección de Mochilas bebidas y alimentos"><img src="img/Mochilas.webp" alt="MOCHILAS"></a>
                 <h3>MOCHILAS</h3>
             </article>
 
             <article>
-                <a href="pen.html"><img src="img/Dakar.webp" alt="Takayama Bunker"></a>
+                <a href="pen.html" aria-label="Ir a la sección de bolígrafos"><img src="img/Dakar.webp" alt="BOLÍGRAFOS"></a>
                 <h3>BOLÍGRAFOS</h3>
             </article>
         </section>
 
         <section class="menu">
             <h2>MENU</h2>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="backpack.html">Mochilas</a></li>
-                <li><a href="pen.html">Bolígrafos</a></li>
-                <li><a href="drink.html">Bebidas y Alimentos</a></li>
-            </ul>
-            <i><img src="img/x-icon.svg" alt="Icono quitar"></i>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Ir a la sección de inicio">Inicio</a></li>
+                    <li><a href="backpack.html" aria-label="Ir a la sección de mochilas">Mochilas</a></li>
+                    <li><a href="pen.html" aria-label="Ir a la sección de bolígrafos">Bolígrafos</a></li>
+                    <li><a href="drink.html" aria-label="Ir a la sección de bebidas y alimentos">Bebidas y Alimentos</a></li>
+                </ul>
+            </nav>
+            <i aria-label="Cerrar ventana"><img src="img/x-icon.svg" alt="Salir"></i>
         </section>
 
         <section class="cart">
