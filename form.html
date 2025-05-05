@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="js/functions.js" defer></script>
+    <title>Tienda G4</title>
+</head>
+<body>
+    <main class="modalContent" aria-labelledby="modal-title">
+        <div>
+            <img src="img/black-logo.png" alt="logo">
+            <h2 id="modal-title" lang="en">Create Account</h2>
+            <form>
+                <label for="name">Nombre de Usuario:</label>
+                <input type="text" id="name" name="nombre" required aria-label="Ingresa un nombre de usuario">
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="contraseña" required aria-label="Ingresa una contraseña">
+
+                <label for="confirmPassword">Confirme la contraseña:</label>
+                <input required type="password" id="confirmPassword" name="contraseñaConfirmada" aria-label="Confirma tu contraseña">
+
+                <button type="submit" aria-label="Confirma la información y sigue" lang="en">Next</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

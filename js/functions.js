@@ -31,6 +31,10 @@ buyDiv.setAttribute("class", "cart__btn");
 
 const buyBtn = document.createElement("button");
 buyBtn.textContent = "COMPRAR";
+buyBtn.setAttribute("aria-controls", "create-account");
+buyBtn.addEventListener("click", () => {
+    window.location.href = "form.html";
+});
 
 buyDiv.append(buyBtn);
 

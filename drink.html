@@ -12,99 +12,101 @@
 </head>
 <body>
     <header>
-        <i><img src="img/menu-icon.svg" alt="Menu Icon"></i>
+        <i><img src="img/menu-icon.svg" alt="Abrir menu de naveación"></i>
         <img src="img/logo.webp" alt="Logo G4" class="logo">
-        <i class="header__cart"><img src="img/shopping-cart-icon.svg" alt="Cart Icon"></i>
-        <span class="header__counter">0</span>
+        <i class="header__cart"><img src="img/shopping-cart-icon.svg" alt="Abrir carrito"></i>
+        <span class="header__counter" role="status">0</span>
     </header>
 
     <main>
-        <section class="banner">
+        <section class="banner" role="complementary">
             <h2>Bebidas y Alimentos</h2>
             <p>Conoce nuestros productos para bebidas y alimentos</p>
         </section>
 
         <section class="products">
             <article>
-                <img src="img/Anfora-cava.webp" alt="Anfora cava">
+                <img src="img/Anfora-cava.webp" alt="Termo modelo: Anfora cava">
                 <h3>Anfora cava</h3>
                 <p>$450</p>
-                <button class="products__addBtn">AGREGAR AL CARRITO</button>
+                <button class="products__addBtn" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
             </article>
 
             <article>
-                <img src="img/Anfora-Tanker.webp" alt="Anfora Tanker">
+                <img src="img/Anfora-Tanker.webp" alt="Termo modelo: Anfora Tanker">
                 <h3>Anfora Tanker</h3>
                 <p>$300</p>
-                <button class="products__addBtn">AGREGAR AL CARRITO</button>
+                <button class="products__addBtn" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
             </article>
 
             <article>
-                <img src="img/Alium.webp" alt="Destapador Alium">
+                <img src="img/Alium.webp" alt="Destapador: Alium">
                 <h3>Destapador Alium</h3>
                 <p>$100</p>
-                <button class="products__addBtn">AGREGAR AL CARRITO</button>
+                <button class="products__addBtn" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
             </article>
 
             <article>
-                <img src="img/Lonchera-Takayama.webp" alt="Lonchera Takayama Deli">
+                <img src="img/Lonchera-Takayama.webp" alt="Lonchera modelo: Takayama Deli">
                 <h3>Lonchera Takayama Deli</h3>
                 <p>$200</p>
-                <button class="products__addBtn">AGREGAR AL CARRITO</button>
+                <button class="products__addBtn" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
             </article>
 
             <article>
-                <img src="img/lonchera roller.webp" alt="Lonchera Takayama Roller Lunch">
+                <img src="img/lonchera roller.webp" alt="Lonchera modelo: Takayama Roller Lunch">
                 <h3>Lonchera Takayama Roller Lunch</h3>
                 <p>$700</p>
-                <button class="products__addBtn">AGREGAR AL CARRITO</button>
+                <button class="products__addBtn" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
             </article>
 
             <article>
-                <img src="img/Termo emporio.webp" alt="Termo Emporio">
+                <img src="img/Termo emporio.webp" alt="Termo moedelo: Emporio">
                 <h3>Termo Emporio</h3>
                 <p>$250</p>
-                <button class="products__addBtn">AGREGAR AL CARRITO</button>
+                <button class="products__addBtn" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
             </article>
 
             <article>
-                <img src="img/Termo tiny.webp" alt="Termo Tiny">
+                <img src="img/Termo tiny.webp" alt="Termo moedelo: Tiny">
                 <h3>Termo Tiny</h3>
                 <p>$200</p>
-                <button class="products__addBtn">AGREGAR AL CARRITO</button>
+                <button class="products__addBtn" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
             </article>
 
             <article>
-                <img src="img/termo titan.webp" alt="Termo Titan">
+                <img src="img/termo titan.webp" alt="Termo moedelo: Titan">
                 <h3>Termo Titan</h3>
                 <p>$500</p>
-                <button class="products__addBtn">AGREGAR AL CARRITO</button>
+                <button class="products__addBtn" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
             </article>
 
             <article>
-                <img src="img/vaso giga.webp" alt="Vaso Giga">
+                <img src="img/vaso giga.webp" alt="Vaso modelo: Giga">
                 <h3>Vaso Giga</h3>
                 <p>$400</p>
-                <button class="products__addBtn">AGREGAR AL CARRITO</button>
+                <button class="products__addBtn" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
             </article>
 
             <article>
-                <img src="img/vaso venti.webp" alt="Vaso Venti">
+                <img src="img/vaso venti.webp" alt="Vaso modelo: Venti">
                 <h3>Vaso Venti</h3>
                 <p>$450</p>
-                <button class="products__addBtn">AGREGAR AL CARRITO</button>
+                <button class="products__addBtn" aria-label="Agregar producto al carrito">AGREGAR AL CARRITO</button>
             </article>
         </section>
 
         <section class="menu">
             <h2>MENU</h2>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="backpack.html">Mochilas</a></li>
-                <li><a href="pen.html">Bolígrafos</a></li>
-                <li><a href="drink.html">Bebidas y Alimentos</a></li>
-            </ul>
-            <i><img src="img/x-icon.svg" alt="Icono quitar"></i>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Ir a la sección de inicio">Inicio</a></li>
+                    <li><a href="backpack.html" aria-label="Ir a la sección de mochilas">Mochilas</a></li>
+                    <li><a href="pen.html" aria-label="Ir a la sección de bolígrafos">Bolígrafos</a></li>
+                    <li><a href="drink.html" aria-label="Ir a la sección de bebidas y alimentos">Bebidas y Alimentos</a></li>
+                </ul>
+            </nav>
+            <i aria-label="Cerrar ventana"><img src="img/x-icon.svg" alt="Salir"></i>
         </section>
 
         <section class="cart">
